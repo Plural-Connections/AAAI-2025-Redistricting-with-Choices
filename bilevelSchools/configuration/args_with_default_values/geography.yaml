@@ -1,0 +1,61 @@
+[
+    # PATH
+    {
+        "arg_name": "s_travel_time_json_path",
+        "default_val": "updated_elementary_travel_times_matrix.json",
+        "nargs": "?",
+        "input_kind": "path",
+        "parent_dir": "s_data_dir"
+    },
+    {
+        "arg_name": "s_travel_dist_json_path",
+        "default_val": "Elementary_travel_distances_matrix.json",
+        "nargs": "?",
+        "input_kind": "path",
+        "parent_dir": "s_data_dir"
+    },
+    {
+        "arg_name": "s_cb_school_network_json_path",
+        "default_val": "Elementary_block_networks.json",
+        "nargs": "?",
+        "input_kind": "path",
+        "parent_dir": "s_data_dir"
+    },
+    {
+        "arg_name": "s_census_block_shape_path",
+        "default_val": "tl_2021_37_tabblock20/tl_2021_37_tabblock20.shp",
+        "nargs": "?",
+        "input_kind": "path",
+        "parent_dir": "s_data_dir"
+    },
+    {
+        "arg_name": "s_cb_neighbor_json_path",
+        "default_val": "census_blocks_and_current_neighbors_at_zoned_school.json",
+        "nargs": "?",
+        "input_kind": "path",
+        "parent_dir": "s_main_prepare_dir"
+    },
+    {
+        "arg_name": "s_school_assignment_html_path",
+        "default_val": "map.html",
+        "nargs": "?",
+        "input_kind": "path",
+        "parent_dir": "s_optimization_result_dir"
+    },
+
+    # Pars
+    {
+        "arg_name": "l_center_coord",
+        "default_val": [36.0999, -80.2442],
+        "nargs": "?",
+        "input_kind": "par",
+        "comments": "This is the center of Winston-Salem, North Carolina"
+    },
+    {
+        "arg_name": "l_not_considred_cbs",
+        "default_val": ['371970501012005'],
+        "nargs": "?",
+        "input_kind": "par",
+        "comment": "has zero student so far, not in the networkx graph either, because it is in a middle of a river"
+    }
+]

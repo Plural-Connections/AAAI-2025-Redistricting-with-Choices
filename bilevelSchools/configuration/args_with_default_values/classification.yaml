@@ -1,0 +1,167 @@
+[
+    # Dirs
+    {
+        "arg_name": "s_classification_input_dir",
+        "default_val": "",
+        "nargs": "?",
+        "input_kind": "dir",
+    },
+    {
+        "arg_name": "s_classification_result_dir",
+        "default_val": "",
+        "nargs": "?",
+        "input_kind": "dir",
+    },
+    {
+        "arg_name": "s_ml_features_json_path",
+        "default_val": "machine_learning_features.json",
+        "nargs": "?",
+        "input_kind": "path",
+        "parent_dir": "s_classification_input_dir"
+    },
+    {
+        "arg_name": "s_ml_features_collection_json_path",
+        "default_val": "machine_learning_features_collection.json",
+        "nargs": "?",
+        "input_kind": "path",
+        "parent_dir": "s_classification_input_dir"
+    },
+    {
+        "arg_name": "s_ml_labels_json_path",
+        "default_val": "machine_learning_labels.json",
+        "nargs": "?",
+        "input_kind": "path",
+        "parent_dir": "s_classification_input_dir"
+    },
+    {
+        "arg_name": "s_overall_confusion_matrix_png_path",
+        "default_val": "confusion_matrix.png",
+        "nargs": "?",
+        "input_kind": "path",
+        "parent_dir": "s_classification_result_dir"
+    },
+    {
+        "arg_name": "s_key_matrices_report_json_path",
+        "default_val": "classification_report.json",
+        "nargs": "?",
+        "input_kind": "path",
+        "parent_dir": "s_classification_result_dir"
+    },
+
+    {
+        "arg_name": "s_test_set_distribution_npy_path",
+        "default_val": "test_prob_dist_fold_{:02d}.npy",
+        "nargs": "?",
+        "input_kind": "path",
+        "parent_dir": "s_classification_result_dir"
+    },
+    {
+        "arg_name": "s_test_set_labels_json_path",
+        "default_val": "test_set_label_{:02d}.json",
+        "nargs": "?",
+        "input_kind": "path",
+        "parent_dir": "s_classification_result_dir"
+    },
+    {
+        "arg_name": "s_validate_set_acc_json_path",
+        "default_val": "validate_set_accuracy.json",
+        "nargs": "?",
+        "input_kind": "path",
+        "parent_dir": "s_classification_result_dir"
+    },
+
+
+    # Pars for Classificaiton's Pipeline
+    {
+        "arg_name": "b_preprocess_classification_input",
+        "default_val": False,
+        "nargs": "?",
+        "input_kind": "par"
+    },
+    {
+        "arg_name": "s_classify_method",
+        "default_val": 'follow',
+        "possible_choices": [
+          'follow', 'rule_based',
+          'multinomial_logit', 'xgboost'
+        ],
+        "nargs": "?",
+        "input_kind": "par"
+    },
+
+    # Pars for Classification
+    {
+        "arg_name": i_num_folds,
+        "default_val": 10,
+        "nargs": "?",
+        "input_kind": "par"
+    },
+    {
+        "arg_name": i_random_seed_for_cross_valid,
+        "default_val": 42,
+        "nargs": "?",
+        "input_kind": "par"
+    },
+    {
+        "arg_name": i_random_seed_for_train_valid_split,
+        "default_val": 42,
+        "nargs": "?",
+        "input_kind": "par"
+    },
+    {
+        "arg_name": i_xgboost_max_depth,
+        "default_val": 10,
+        "nargs": "?",
+        "input_kind": "par"
+    },
+    {
+        "arg_name": f_xgboost_eta,
+        "default_val": 0.1,
+        "nargs": "?",
+        "input_kind": "par"
+    },
+    {
+        "arg_name": i_early_stopping_round,
+        "default_val": 20,
+        "nargs": "?",
+        "input_kind": "par"
+    },
+    {
+        "arg_name": d_xgboost_basic_params,
+        "default_val": {
+            'objective': 'multi:softmax',
+            'eval_metric': 'mlogloss',
+            'eta': 0.1,
+            'max_depth': 10,
+            'verbosity': 1
+        },
+        "nargs": "?",
+        "input_kind": "par"
+    },
+    {
+        "arg_name": i_num_rounds,
+        "default_val": 1000,
+        "nargs": "?",
+        "input_kind": "par"
+    },
+    {
+        "arg_name": f_logit_C,
+        "default_val": 1,
+        "nargs": "?",
+        "input_kind": "par"
+    },
+    {
+        "arg_name": i_logit_max_itr,
+        "default_val": 2000,
+        "nargs": "?",
+        "input_kind": "par"
+    },
+    {
+        "arg_name": f_training_ratio_in_train_validate,
+        "default_val": 0.85,
+        "nargs": "?",
+        "input_kind": "par"
+    }
+]
+
+

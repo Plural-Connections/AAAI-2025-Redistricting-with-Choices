@@ -1,0 +1,55 @@
+[
+    # Paths
+    {
+        "arg_name": "s_census_block_ses_csv_path",
+        "default_val": "updated_with_ses_Elementary_blocks_to_schools_processed_data_wsfcs.csv",
+        "nargs": "?",
+        "input_kind": "path",
+        "parent_dir": "s_data_dir"
+    },
+    {
+        "arg_name": "s_cb_features_json_path",
+        "default_val": "features_from_census_blocks.json",
+        "nargs": "?",
+        "input_kind": "path",
+        "parent_dir": "s_main_prepare_dir"
+    },
+    {
+      "arg_name": "s_student_raw_info_csv_path",
+      "default_val": "HISTORICAL_Elementary_wsfcs_student_info.csv",
+      "nargs": "?",
+      "input_kind": "path",
+      "parent_dir": "s_data_dir"
+    },
+    {
+      "arg_name": "s_student_features_json_path",
+      "default_val": "features_from_students.json",
+      "nargs": "?",
+      "input_kind": "path",
+      "parent_dir": "s_main_prepare_dir"
+    },
+    # Pars
+    {
+      "arg_name": "l_races",
+      "default_val": [
+        "black", "multiple", "white",
+        "asian", "hispanic", "native", "pacific"
+      ],
+      "nargs": "?",
+      "input_kind": "par"
+    },
+    {
+      "arg_name": "d_race_name_map",
+      "default_val": {
+          'Asian': "asian",
+          'Black or African American':'black',
+          'American Indian/Alaskan Native': 'native',
+          'White': 'white',
+          'Hawaiian/Pacific Islander': 'pacific',
+          'Hispanic': "hispanic",
+          "Two or More": "multiple"
+        },
+      "nargs": "?",
+      "input_kind": "par"
+    }
+]

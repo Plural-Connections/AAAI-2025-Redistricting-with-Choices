@@ -1,0 +1,17 @@
+[
+    # Dirs
+    {
+        "arg_name": "s_data_dir",
+        "default_val": "bilevel-school/data",
+        "nargs": "?",
+        "input_kind": "dir",
+    },
+    {
+        # prepared file that can be used for multiple tasks
+        "arg_name": "s_main_prepare_dir",
+        "default_val": "scratch/bilevel_school/prepare",
+        "nargs": "?",
+        "input_kind": "dir",
+    },
+]
+

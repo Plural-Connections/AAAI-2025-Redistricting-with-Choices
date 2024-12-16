@@ -1,0 +1,44 @@
+[
+    # Paths
+    {
+        "arg_name": "s_analysis_dir",
+        "default_val": "",
+        "nargs": "?",
+        "input_kind": "dir"
+    },
+      {
+        "arg_name": "s_optout_count_json_path",
+        "default_val": "optout_count.json",
+        "nargs": "?",
+        "input_kind": "path",
+        "parent_dir": "s_analysis_dir"
+    },
+    {
+        "arg_name": "s_cb_optout_count_map_html_path",
+        "default_val": "map_optout_count.html",
+        "nargs": "?",
+        "input_kind": "path",
+        "parent_dir": "s_analysis_dir"
+    },
+    {
+        "arg_name": "s_cb_optout_ratio_map_html_path",
+        "default_val": "map_optout_ratio.html",
+        "nargs": "?",
+        "input_kind": "path",
+        "parent_dir": "s_analysis_dir"
+    },
+    {
+        "arg_name": "s_school_optout_count_map_html_path",
+        "default_val": "map_optout_to_school.html",
+        "nargs": "?",
+        "input_kind": "path",
+        "parent_dir": "s_analysis_dir"
+    },
+    {
+        "arg_name": "s_school_attendance_change_map_html_path",
+        "default_val": "map_school_attedance_change.html",
+        "nargs": "?",
+        "input_kind": "path",
+        "parent_dir": "s_analysis_dir"
+    }
+]

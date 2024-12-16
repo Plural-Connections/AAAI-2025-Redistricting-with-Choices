@@ -1,0 +1,9 @@
+### Generate Instances
+s_generated_result_dir: scratch/bilevel_school/instances_current
+i_num_possible_instances: 1
+s_gen_instance_method: current
+
+### Rezone
+s_optimization_result_dir: scratch/bilevel_school/optimization_current_report
+b_only_evaluate_current_case: True
+i_num_instances: 1

@@ -1,0 +1,9 @@
+# Cached
+*.pyc
+*.DS_Store
+*.idea
+
+data
+processed_data
+slides
+kept_results

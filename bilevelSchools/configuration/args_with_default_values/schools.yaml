@@ -1,0 +1,63 @@
+[
+    # Paths
+    {
+        "arg_name": "s_school_rating_csv_path",
+        "default_val": "gs_may_2023_ratings.csv",
+        "nargs": "?",
+        "input_kind": "path",
+        "parent_dir": "s_data_dir"
+    },
+    {
+        "arg_name": "s_school_zone_of_choice_csv_path",
+        "default_val": "updated_elem_district_data.csv",
+        "nargs": "?",
+        "input_kind": "path",
+        "parent_dir": "s_data_dir"
+    },
+    {
+        "arg_name": "s_school_program_csv_path",
+        "default_val": "school_programs.csv",
+        "nargs": "?",
+        "input_kind": "path",
+        "parent_dir": "s_data_dir"
+    },
+    {
+        "arg_name": "s_school_map_color_json_path",
+        "default_val": "school_colors_on_map.json",
+        "nargs": "?",
+        "input_kind": "path",
+        "parent_dir": "s_data_dir"
+    },
+    {
+        "arg_name": "s_school_features_json_path",
+        "default_val": "features_from_schools.json",
+        "nargs": "?",
+        "input_kind": "path",
+        "parent_dir": "s_main_prepare_dir"
+    },
+
+    # Pars
+    {
+        "arg_name": "s_school_icon_url",
+        "default_val": "https://www.svgrepo.com/show/475271/school.svg",
+        "nargs": "?",
+        "input_kind": "par"
+    },
+    {
+        "arg_name": "l_not_considred_kindergarten",
+        # 0 is kept in the dist / time data
+        "default_val": ['370150002985', '370150000594', '370150002293', "0"],
+        "nargs": "?",
+        "input_kind": "par"
+    },
+    {
+        "arg_name": "l_zone_of_choices",
+        "default_val": [
+            "1 Blue", "1 Green", "2", "3", "4", "5", "6",
+            "7 Blue", "7 Green", "8 Blue", "8 Green"
+        ],
+        "nargs": "?",
+        "input_kind": "par",
+        "comment": "https://www.wsfcs.k12.nc.us/o/wsfcs/page/elementary-school-zones"
+    }
+]

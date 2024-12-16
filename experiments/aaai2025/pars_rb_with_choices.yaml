@@ -1,0 +1,13 @@
+### Choice Modeling
+s_classification_input_dir: scratch/bilevel_school/classification_input
+s_classification_result_dir: scratch/bilevel_school/classification_result_rb
+s_classify_method: rule_based
+
+### Generate Instances
+s_generated_result_dir: scratch/bilevel_school/instances_rb
+i_num_possible_instances: 500
+s_gen_instance_method: rule_based
+
+### Rezone
+i_num_instances: 50
+s_optimization_result_dir: scratch/bilevel_school/optimization_rb_with_choices_report

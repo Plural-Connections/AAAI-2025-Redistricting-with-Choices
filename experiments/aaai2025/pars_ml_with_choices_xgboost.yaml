@@ -1,0 +1,23 @@
+### Choice Modeling
+s_classification_input_dir: scratch/bilevel_school/classification_input
+s_classification_result_dir: scratch/bilevel_school/classification_result_xgboost
+s_classify_method: xgboost
+d_xgboost_basic_params: {
+    'objective': 'multi:softmax',
+    'eval_metric': 'mlogloss',
+    'eta': 0.1,
+    'max_depth': 6,
+    'verbosity': 1
+}
+
+### Generate Instances
+s_generated_result_dir: scratch/bilevel_school/instances_ml
+i_num_possible_instances: 500
+s_gen_instance_method: ml_model
+
+### Rezone
+i_num_instances: 50
+s_optimization_result_dir: scratch/bilevel_school/optimization_ml_with_choices_report
+
+### Post Analysis
+s_analysis_dir: scratch/bilevel_school/optimization_ml_with_choices_report

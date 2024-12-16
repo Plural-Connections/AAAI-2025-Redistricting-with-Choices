@@ -1,0 +1,10 @@
+--s_input_dir_par_yaml_path ./experiments/aaai2025/pars_follow_with_choices.yaml     --s_optimization_result_dir scratch/bilevel_school/optimization_follow_with_choices_01_hour --i_cp_max_solving_hour 1
+--s_input_dir_par_yaml_path ./experiments/aaai2025/pars_follow_with_choices.yaml     --s_optimization_result_dir scratch/bilevel_school/optimization_follow_with_choices_06_hour --i_cp_max_solving_hour 6
+--s_input_dir_par_yaml_path ./experiments/aaai2025/pars_follow_with_choices.yaml     --s_optimization_result_dir scratch/bilevel_school/optimization_follow_with_choices_12_hour --i_cp_max_solving_hour 12
+--s_input_dir_par_yaml_path ./experiments/aaai2025/pars_rb_with_choices.yaml         --s_optimization_result_dir scratch/bilevel_school/optimization_rb_with_choices_01_hour --i_cp_max_solving_hour 1
+--s_input_dir_par_yaml_path ./experiments/aaai2025/pars_rb_with_choices.yaml         --s_optimization_result_dir scratch/bilevel_school/optimization_rb_with_choices_06_hour --i_cp_max_solving_hour 6
+--s_input_dir_par_yaml_path ./experiments/aaai2025/pars_rb_with_choices.yaml         --s_optimization_result_dir scratch/bilevel_school/optimization_rb_with_choices_12_hour --i_cp_max_solving_hour 12
+--s_input_dir_par_yaml_path ./experiments/aaai2025/pars_ml_with_choices_xgboost.yaml --s_optimization_result_dir scratch/bilevel_school/optimization_ml_with_choices_01_hour --i_cp_max_solving_hour 1
+--s_input_dir_par_yaml_path ./experiments/aaai2025/pars_ml_with_choices_xgboost.yaml --s_optimization_result_dir scratch/bilevel_school/optimization_ml_with_choices_06_hour --i_cp_max_solving_hour 6
+--s_input_dir_par_yaml_path ./experiments/aaai2025/pars_ml_with_choices_xgboost.yaml --s_optimization_result_dir scratch/bilevel_school/optimization_ml_with_choices_12_hour --i_cp_max_solving_hour 12
+--s_input_dir_par_yaml_path ./experiments/aaai2025/pars_current.yaml

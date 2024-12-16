@@ -1,0 +1,68 @@
+[
+    # Dirs
+    {
+        "arg_name": "s_generated_result_dir",
+        "default_val": "",
+        "nargs": "?",
+        "input_kind": "dir",
+    },
+
+    # Paths
+    {
+        "arg_name": "s_1_choice_instance_json_path",
+        "default_val": "instance_{:02d}.json",
+        "nargs": "?",
+        "input_kind": "path",
+        "parent_dir": "s_generated_result_dir"
+    },
+    {
+        "arg_name": "s_ml_model_instance_gen_pickle_path",
+        "default_val": "model_for_instance_generation.pickle",
+        "nargs": "?",
+        "input_kind": "path",
+        "parent_dir": "s_generated_result_dir"
+    },
+    {
+        "arg_name": "s_ml_model_instance_gen_training_reference_pickle_path",
+        "default_val": "training_data_reference.pickle",
+        "nargs": "?",
+        "input_kind": "path",
+        "parent_dir": "s_generated_result_dir"
+    },
+
+    # Pars for Generate Instances
+    {
+        "arg_name": "i_num_instances",
+        "default_val": 30,
+        "nargs": "?",
+        "input_kind": "par"
+    },
+    {
+        "arg_name": "i_num_possible_instances",
+        "default_val": 500,
+        "nargs": "?",
+        "input_kind": "par",
+        "comments": "500 instances are possible there, but we use i_num_instances to solve the CP problem"
+    },
+    {
+        "arg_name": "i_instance_idx",
+        "default_val": 1,
+        "nargs": "?",
+        "input_kind": "par",
+        "comments": "use this when parallely generate instances"
+    },
+    {
+        "arg_name": "s_gen_instance_method",
+        "default_val": "ml_model",
+        "nargs": "?",
+        "input_kind": "par"
+    },
+    {
+        "arg_name": "b_train_a_new_model_to_generate_instance",
+        "default_val": true,
+        "nargs": "?",
+        "input_kind": "par"
+    }
+]
+
+

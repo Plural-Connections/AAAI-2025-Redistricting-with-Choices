@@ -1,0 +1,120 @@
+[
+    # Dirs
+    {
+        "arg_name": "s_optimization_result_dir",
+        "default_val": "",
+        "nargs": "?",
+        "input_kind": "dir",
+    },
+
+    # Paths
+    {
+        "arg_name": "s_result_cb_json_path",
+        "default_val": "results_census_blocks.json",
+        "nargs": "?",
+        "input_kind": "path",
+        "parent_dir": "s_optimization_result_dir"
+    },
+    {
+        "arg_name": "s_result_student_json_path",
+        "default_val": "evaluation_students.json",
+        "nargs": "?",
+        "input_kind": "path",
+        "parent_dir": "s_optimization_result_dir"
+    },
+    {
+        "arg_name": "s_result_school_json_path",
+        "default_val": "evaluation_schools.json",
+        "nargs": "?",
+        "input_kind": "path",
+        "parent_dir": "s_optimization_result_dir"
+    },
+    {
+        "arg_name": "s_result_scores_json_path",
+        "default_val": "evaluation_scores.json",
+        "nargs": "?",
+        "input_kind": "path",
+        "parent_dir": "s_optimization_result_dir"
+    },
+    {
+        "arg_name": "s_result_cp_summary_json_path",
+        "default_val": "results_cp_summary_after_{}_hours.json",
+        "nargs": "?",
+        "input_kind": "path",
+        "parent_dir": "s_optimization_result_dir"
+    },
+
+
+    # Pars for Optimization's Pipeline
+    {
+        "arg_name": "b_only_evaluate_current_case",
+        "default_val": False,
+        "nargs": "?",
+        "input_kind": "par"
+    },
+    {
+        "arg_name": "b_directly_load_rezone_result",
+        "default_val": False,
+        "nargs": "?",
+        "input_kind": "par"
+    },
+    {
+        "arg_name": "i_random_seed_for_picking_instances",
+        "default_val": 42,
+        "nargs": "?",
+        "input_kind": "par"
+    },
+    # Pars for solver
+    {
+        "arg_name": "i_cp_max_solving_hour",
+        "default_val": 0.1,
+        "nargs": "?",
+        "input_kind": "par"
+    },
+    {
+        "arg_name": "i_cp_num_threads",
+        "default_val": 8,
+        "nargs": "?",
+        "input_kind": "par"
+    },
+    {
+        "arg_name": "b_rewrite_cp_model",
+        "default_val": true,
+        "nargs": "?",
+        "input_kind": "par"
+    },
+    {
+        "arg_name": "i_scale_up_multip",
+        "default_val": 100000,
+        "nargs": "?",
+        "input_kind": "par"
+    },
+    {
+        "arg_name": "i_num_decimal",
+        "default_val": 5,
+        "nargs": "?",
+        "input_kind": "par"
+    },
+
+    # Pars for model
+    {
+        "arg_name": "f_travel_time_increase_max_ratio",
+        "default_val": 0.5,
+        "nargs": "?",
+        "input_kind": "par"
+    },
+    {
+        "arg_name": "f_school_population_change_max_ratio",
+        "default_val": 0.15,
+        "nargs": "?",
+        "input_kind": "par"
+    },
+    {
+        "arg_name": "b_add_contiguity_cst",
+        "default_val": true,
+        "nargs": "?",
+        "input_kind": "par"
+    }
+]
+
+

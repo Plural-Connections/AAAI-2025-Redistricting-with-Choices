@@ -1,0 +1,4 @@
+### Choice Modeling
+s_classification_input_dir: scratch/bilevel_school/classification_input
+s_classification_result_dir: scratch/bilevel_school/classification_result_logit
+s_classify_method: multinomial_logit
